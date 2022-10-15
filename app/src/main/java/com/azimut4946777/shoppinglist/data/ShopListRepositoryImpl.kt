@@ -51,6 +51,10 @@ object ShopListRepositoryImpl : ShopListRepository {
         return shopListLD
     }
 
+    override fun deleteAllShopItem(shopList: MutableList<ShopItem>){
+        shopList.clear()
+    }
+
     private fun updateList() {
         shopListLD.value = shopList.toList()
     }
