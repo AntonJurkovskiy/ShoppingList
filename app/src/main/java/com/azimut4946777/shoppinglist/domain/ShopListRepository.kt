@@ -14,6 +14,8 @@ interface ShopListRepository {
 
     fun getShopList(): LiveData<List<ShopItem>>
 
+    fun deleteAllShopItem(shopList: MutableList<ShopItem>)
+
 
 
 }
